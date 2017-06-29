@@ -29,13 +29,12 @@ Get Customers Info :<html:submit value="GetDetails"/>
         %>
 
 <%  String serverIP = request.getLocalAddr(); %>
- <div style="position: absolute; bottom: 55; right: 55; text-align:center;">
-<%
- out.println( " CLIENT-IPAddress:"+ip );
-%>
-<%
- out.print( "<BR> SERVER-IPAddress:"+serverIP );
-%>
+
+ <div style="position: absolute; bottom: 15; right: 55; text-align:center;">
+	<% out.println( " Your-IPAddress:"+ip ); %>
+</div>
+ <div style="position: absolute; bottom: 15; left: 55 ; text-align:center;">
+	<% out.print( "<BR> WEBSERVER-IPAddress:"+serverIP ); %>
 </div>
 </body>
 </html>
