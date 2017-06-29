@@ -6,9 +6,9 @@
 <head>
 </head>
 <body>
-<h1 align="center">Customer Details</h1>
-<table align="center" border="2">
-<tr bgcolor="#33ccff">
+<h1 align="left">Customer Details</h1>
+<table align="left" border="2">
+<tr bgcolor="#488AC7">
     <th>Customer Name</th>
     <th>Customer Id</th>
     <th>Customer Address</th>
