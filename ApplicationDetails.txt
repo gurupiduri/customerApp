@@ -21,3 +21,9 @@ http://54.234.207.200:49001/job/KC-DEMO/job/anisible-pipeline/job/Customer%20App
 Step 6 : Hit below Url in browser        
 
 http://54.165.162.129:49003/customerApp/
+
+To Spin CustomerApp Docker contianer
+Step 1: Build docker tomcat contianer
+ docker build -t tomcat:cutomerApp .
+Step 2: Run docker tomcat container
+docker run -d -p 49009:8080 --name tomcat tomcat:cutomerApp
