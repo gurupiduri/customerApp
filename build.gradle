@@ -1,6 +1,7 @@
 plugins { 
      id "org.sonarqube" version "2.3" 
    }   
+   ext.nexus_ip =System.getenv("nexus_ip")
  sonarqube { 
  properties { 
          property "sonar.projectName", "customerApp" 
@@ -35,17 +36,17 @@ plugins {
 		}
 	
 	repositories {
-    maven { url "http://34.230.64.136:8081/nexus/content/repositories/central" }
+    maven { url "http://$nexus_ip:8081/nexus/content/repositories/central" }
 		} 
   
 		
    uploadArchives {  
     repositories {  
         mavenDeployer {  
-            repository(url: 'http://34.230.64.136:8081/nexus/content/repositories/releases/') {  
+            repository(url: 'http://$nexus_ip:8081/nexus/content/repositories/releases/') {  
                 authentication(userName: 'admin', password: 'admin123');  
             }  
-            snapshotRepository(url: 'http://34.230.64.136:8081/nexus/content/repositories/snapshots/') {
+            snapshotRepository(url: 'http://$nexus_ip:8081/nexus/content/repositories/snapshots/') {
                 authentication(userName: 'admin', password: 'admin123');  
             }  
         }  
