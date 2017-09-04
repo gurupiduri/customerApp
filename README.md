@@ -1,2 +1,2 @@
 # customerApp
-Customer Application (Java + MYSQL)
+Customer Application with (Java + MYSQL)
