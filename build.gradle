@@ -1,7 +1,7 @@
 plugins { 
      id "org.sonarqube" version "2.3" 
    }   
-   ext.nexus_ip =System.getenv("nexus_ip")
+   
  sonarqube { 
  properties { 
          property "sonar.projectName", "customerApp" 
@@ -20,7 +20,7 @@ plugins {
 	ext.baseVersion = "0.1" + (snapshotVersion ? "" : "$baseversionupdate" )
 	version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")  
 	description = 'CustomerApp'
-
+        ext.nexus_ip =System.getenv("nexus_ip")
   sourceCompatibility = 1.8
   targetCompatibility = 1.8
   test {
