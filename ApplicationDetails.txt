@@ -4,7 +4,8 @@ Step 3
  Connect to mysql and create test database mysql -uroot -pmypassword;
 mysql> show databases;+--------------------+| Database           |+--------------------+| information_schema || mysql              || performance_schema || sys                || test               |+--------------------+
 mysql> create database test;
-
+Select Database
+mysql> use testDatabase changed
 
   Step 4: Inserting sample data 
 
