@@ -36,7 +36,7 @@ plugins {
 		}
 	
 	repositories {
-    maven { url "http://192.168.40.160:8081/nexus/content/repositories/central" }
+    maven { url "https://repo1.maven.org/maven2" }
 		} 
   
 		
