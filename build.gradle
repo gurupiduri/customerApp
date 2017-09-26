@@ -46,7 +46,7 @@ plugins {
             repository(url: 'http://34.196.120.121:8081/nexus/content/repositories/releases/') {  
                 authentication(userName: 'admin', password: 'admin123');  
             }  
-            snapshotRepository(url: 'http://34.196.120.121:8081/nexus/content/repositories/snapshots/') {
+            snapshotRepository(url: 'http://192.168.40.160:8081/nexus/content/repositories/snapshots/') {
                 authentication(userName: 'admin', password: 'admin123');  
             }  
         }  
