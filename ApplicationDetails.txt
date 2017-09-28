@@ -34,3 +34,4 @@ Step 7:Sample change
 Adding a comment 1
 Adding a comment 2
 Adding a new change 3
+Adding a feature change 4
