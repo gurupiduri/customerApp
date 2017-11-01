@@ -53,7 +53,7 @@ node('Linux') {
          
 			ansiblePlaybook credentialsId: '14bd8691-b88a-427a-8488-cf28846b9820', installation: 'ansible',extras: '--extra-vars="env_name=$env_name"', playbook: 'customerapp-app-deploy.yml', sudoUser: null
           
-			ansiblePlaybook credentialsId: '14bd8691-b88a-427a-8488-cf28846b9820', installation: 'ansible',  extras: '--extra-vars="env_name=$env_name" --extra-vars="AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" --extra-vars="AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" --extra-vars="app_name=$app_name" --extra-vars="env_name=$env_name"', playbook: 'customerapp-amicreate.yml', sudoUser: null
+			ansiblePlaybook credentialsId: '14bd8691-b88a-427a-8488-cf28846b9820', installation: 'ansible',  extras: '--extra-vars="env_name=$env_name" --extra-vars="AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" --extra-vars="AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" --extra-vars="app_name=$app_name" --extra-vars="env_name=$env_name" --extra-vars="app_version=0.1.$BUILD_NUMBER" ', playbook: 'customerapp-amicreate.yml', sudoUser: null
               
 		  }} else {
         
