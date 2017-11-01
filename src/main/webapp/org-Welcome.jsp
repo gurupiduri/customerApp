@@ -30,10 +30,6 @@ Get Customers Info :<html:submit value="GetDetails"/>
 
 <%  String serverIP = request.getLocalAddr(); %>
 
- <div style="position: absolute; top: 15; right: 55; text-align:center;">
- 	<img src="DevOps-Logo.jpg" alt="CIS-DevOps" width="460" height="345">
-
-</div>
  <div style="position: absolute; bottom: 15; right: 55; text-align:center;">
 	<% out.println( " Your-IPAddress:"+ip ); %>
 </div>
@@ -42,3 +38,5 @@ Get Customers Info :<html:submit value="GetDetails"/>
 </div>
 </body>
 </html>
+
+
