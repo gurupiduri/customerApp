@@ -49,7 +49,7 @@ footer {background: #aaa;color:white;}
 
 <nav class="nav">
 <ul>
-  <li><img src="WEB-INF\classes\DevOps-Logo.jpg" alt="CIS-DevOps" style="width:228px;height:228px;></li>
+  <li><img src="images\DevOps-Logo.jpg" alt="CIS-DevOps" style="width:228px;height:228px;></li>
  
 </ul>
 </nav>
