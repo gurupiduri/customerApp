@@ -75,11 +75,9 @@ footer {background: #aaa;color:white;}
 <%  String serverIP = request.getLocalAddr(); %>
 
 <article class="article">
-<ul>
  <html:form action="/customer.do" >
 Get Customers Info :<html:submit value="GetDetails"/>
 </html:form>
-</ul>
 </article>
 
 <footer>
